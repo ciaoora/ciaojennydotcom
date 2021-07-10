@@ -8,7 +8,7 @@ body {
   color: #130f49;
   border: 10px solid;
   border-image-slice: 1;
-  border-width: 15px;
+  border-width: 10px;
   border-image: linear-gradient(var(--angle), #FA8BFF, #2BD2FF, #2BFF88) 1;
   --angle: 0deg;
   animation: 20s rotate linear infinite;
@@ -24,6 +24,10 @@ body {
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -603,6 +607,7 @@ animation: backgroundGradientAnimate 3s ease infinite;
 }
 
 .commission-images {
-  height: 550px;
   object-fit: cover;
+  min-height: 40rem;
+  padding-bottom: 1rem;
 }
